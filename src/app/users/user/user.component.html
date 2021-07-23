@@ -1,0 +1,8 @@
+<div class="row">
+    <p>User with ID {{user.id}} loaded.</p>
+    <p>User name is {{user.name}}</p>
+    <a [routerLink]="['/users', 10,'Anna']">Load Anna (10)</a>
+</div>
+<div class="row">
+    <button [routerLink]="['/users', user.id,user.name]" class="btn btn-primary btn-sm">Show Users</button>
+</div>
