@@ -1,4 +1,3 @@
-import { ThrowStmt } from "@angular/compiler";
 
 export class AuthService{
     loggedIn = false;
@@ -18,10 +17,12 @@ export class AuthService{
 
     login(){
         this.loggedIn = true;
+        console.log('Logged in!');
     }
 
     logout(){
         this.loggedIn = false;
+        console.log('Logged out!');
     }
 
 }
